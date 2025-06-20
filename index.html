@@ -8,59 +8,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
-<body>
+<body class="bg-gradient-to-br from-purple-100 via-white to-purple-300 min-h-screen">
 
     <!-- header -->
 
-    <section id="header" class="bg-gray-50 my-3 mx-2 p-4 flex items-center justify-between">
-        <a class="flex cursor-pointer" href="#">
-            <img src="src/images/mainlogo bgl.png" alt="">
-            <span class="text-lg mx-3 my-4  font-medium">GreatXt</span>
-        </a>
-        <button class="lg:hidden" onclick="handleClick()">
+    <section id="header" class="bg-gray-100 my-3 mx-2 py-4 px-6 rounded-lg flex items-center justify-between shadow-lg">
+       
+            <a class="flex cursor-pointer" href="#">
+                <img src="src/images/mainlogo bgl.png" alt="">
+                <span class="text-lg mx-3 my-4  font-medium">GreatXt</span>
+            </a>
+            <button class="lg:hidden" onclick="handleClick()">
                 <span class="material-symbols-outlined ">menu</span>
-        </button>
-        <div class="hidden  gap-10 lg:flex">
-            <a href=""  class="text-gray-700 hover:text-green-700 font-medium">Home</a>
-            <a href=""  class="text-gray-700 hover:text-green-700 font-medium">About</a>
-            <a href=""  class="text-gray-700 hover:text-green-700 font-medium">Services</a>
-            <a href=""  class="text-gray-700 hover:text-green-700 font-medium">Pricing</a>
-            <a href=""  class="text-gray-700 hover:text-green-700 font-medium">Contact</a>
-         </div>
-         <button id="" class="group hidden text-lg font-semibold lg:flex p-3 gap-2 border border-gray-500 rounded-lg items-center justify-center hover:border-green-700 hover:text-green-900">
-            Get an enquiry
-            <span class="material-symbols-outlined group-hover:translate-x-1 transition">arrow_forward</span>
-         </button>
-
+            </button>
+            <div class="hidden  gap-10 lg:flex">
+               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">Home</a>
+               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">About</a>
+               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">Services</a>
+               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">Pricing</a>
+               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">Contact</a>
+            </div>
+            <button id="" class="group hidden text-lg font-semibold lg:flex p-3 gap-2 border border-gray-500 rounded-lg items-center justify-center hover:border-purple-700 hover:text-purple-900">
+               Get an enquiry
+               <span class="material-symbols-outlined group-hover:translate-x-1 transition">arrow_forward</span>
+            </button>
+    
 
          <!-- mobile responsive menu -->
 
 
          <div id="mobile-menu" class="hidden flex flex-col fixed z-10 bg-gray-200 inset-0">
-            <div class="flex justify-between items-center my-3 mx-2 p-4 ">
+            <div class="flex justify-between items-center mt-3 mx-2 py-4 px-6">
                 <a class="flex cursor-pointer" href="#">
                     <img src="src/images/mainlogo bgl.png" alt="">
                     <span class="text-lg mx-3 my-4  font-medium">GreatXt</span>
                 </a>
                 <span onclick="handleClick()" class="material-symbols-outlined font-bold">close</span>
             </div>
-            <div class="mt-1">
+            <div>
                 <a href=""  class=" block font-medium p-3 mx-5 my-2 hover:bg-gray-100 rounded-lg ">Home</a>
                 <a href=""  class=" block font-medium p-3 mx-5 my-2 hover:bg-gray-100 rounded-lg ">About</a>
                 <a href=""  class=" block font-medium p-3 mx-5 my-2 hover:bg-gray-100 rounded-lg ">Services</a>
                 <a href=""  class=" block font-medium p-3 mx-5 my-2 hover:bg-gray-100 rounded-lg ">Pricing</a>
                 <a href=""  class=" block font-medium p-3 mx-5 my-2 hover:bg-gray-100 rounded-lg ">Contact</a>
             </div>
-            <div class="h-[1px] bg-gray-500 mx-5"></div>
-            <button class="group text-lg font-semibold p-3 gap-2 flex mx-5 my-2 items-center rounded-lg items-center  hover:text-green-900">
+            <div class="h-[1px] bg-gray-500 mx-5 mt-2"></div>
+            <button class="group text-lg font-semibold p-3 gap-2 flex mx-5 my-3   rounded-lg items-center  hover:text-purple-700">
                 <span>Get an enquiry</span>
                 <span class="material-symbols-outlined group-hover:translate-x-1 transition">arrow_forward</span>
             </button>
          </div>
     </section>
 
+    <!-- Hero section -->
 
-    <section class=""></section>
+    <section id="hero" class="">
+        <div id="Trending" class="group flex items-center my-10 gap-2 px-2 py-1  rounded-lg border border-purple-500 shadow-sm bg-purple-100 m-3 w-fit hover:shadow-lg hover:-translate-y-1 transition">
+            <div class="rounded-full bg-purple-500 border border-purple-950 h-2 w-2"></div>
+            <p class="text-purple-600"><span class="text-purple-700 font-medium">Trending Blog:</span> how to increase traffic on blog</p>
+            <span class="material-symbols-outlined group-hover:translate-x-1 transition text-purple-700 group-hover:translate-x-1 transition">arrow_forward</span>
+        </div>
+    </section>
     <script src="src/script.js"></script>
 </body>
 </html>
