@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreatXt</title>
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./output.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
-<body class="bg-gradient-to-br from-purple-100 via-white to-purple-100 min-h-screen">
+<body class="overflow-x-hidden bg-gradient-to-br from-purple-100 via-white to-purple-100 min-h-screen">
 
     <!-- header -->
 
-    <section id="header" class="bg-gray-100 my-3 mx-2 py-4 px-6 rounded-lg flex items-center justify-between shadow-lg">
+    <section id="header" class=" my-3 mx-2 py-4 px-6 rounded-lg flex items-center justify-between ">
        
             <a class="flex cursor-pointer" href="#">
-                <img src="src/images/mainlogo bgl.png" alt="">
-                <span class="text-lg mx-3 my-4  font-medium">GreatXt</span>
+                <img src="src/images/logo.png" alt="">
+                <span class="text-2xl mx-3 my-4 font-bold font-[inter]">GreatXt</span>
             </a>
             <button class="lg:hidden" onclick="handleClick()">
                 <span class="material-symbols-outlined ">menu</span>
             </button>
             <div class="hidden  gap-10 lg:flex">
-               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">Home</a>
-               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">About</a>
-               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">Services</a>
-               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">Pricing</a>
-               <a href=""  class="text-gray-700 hover:text-purple-700 font-medium">Contact</a>
+               <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">Home</a>
+               <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">About</a>
+               <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">Services</a>
+               <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">Pricing</a>
+               <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">Contact</a>
             </div>
-            <button id="" class="group hidden text-lg font-semibold lg:flex p-3 gap-2 border border-gray-500 rounded-lg items-center justify-center hover:border-purple-700 hover:text-purple-900">
+            <button id="" class="group hidden text-lg font-semibold lg:flex p-3 gap-2 border shadow-md shadow-purple-100 border-gray-500 rounded-lg items-center justify-center hover:border-purple-700 hover:text-purple-900">
                Get an enquiry
                <span class="material-symbols-outlined group-hover:translate-x-1 transition">arrow_forward</span>
             </button>
@@ -40,7 +40,7 @@
          <div id="mobile-menu" class="hidden flex flex-col fixed z-10 bg-gray-200 inset-0">
             <div class="flex justify-between items-center mt-3 mx-2 py-4 px-6">
                 <a class="flex cursor-pointer" href="#">
-                    <img src="src/images/mainlogo bgl.png" alt="">
+                    <img src="src/images/logo.png" alt="">
                     <span class="text-lg mx-3 my-4  font-medium">GreatXt</span>
                 </a>
                 <span onclick="handleClick()" class="material-symbols-outlined font-bold">close</span>
@@ -62,11 +62,15 @@
 
     <!-- Hero section -->
 
-    <section id="hero" class="">
-        <div id="Trending" class="group flex items-center my-10 gap-2 px-2 py-1  rounded-lg border border-purple-500 shadow-sm bg-purple-100 m-3 w-fit hover:shadow-lg hover:-translate-y-1 transition">
+    <section id="hero" class="flex  flex-col lg:items-center">
+        <div id="Trending" class="group flex items-center mx-5 my-10 gap-2 px-2 py-1    rounded-lg border border-purple-500 shadow-sm bg-purple-100  w-fit hover:shadow-lg hover:-translate-y-1 transition">
             <div class="rounded-full bg-purple-500 border border-purple-950 h-2 w-2"></div>
             <p class="text-purple-600"><span class="text-purple-700 font-medium">Trending Blog:</span> Check-out</p>
-            <span class="material-symbols-outlined group-hover:translate-x-1 transition text-purple-700 group-hover:translate-x-1 transition">arrow_forward</span>
+            <span class="material-symbols-outlined group-hover:translate-x-1 transition text-purple-700 ">arrow_forward</span>
+        </div>
+        <div id="heading" class="mx-5  flex flex-col lg:items-center  lg:w-[850px] ">
+            <h1 class="font-[inter]  text-gray-800 text-5xl font-bold lg:text-center  lg:text-6xl">Get the best possible services from our brand</h1>
+            <p class="font-[inter] text-xl text-purple-700 my-4 lg:text-center lg:text-2xl ">Take your brand to next level by creating modern websites and applications. Here at GreatXt, that's what we do.</p>
         </div>
     </section>
     <script src="src/script.js"></script>
