@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
-<body class="overflow-x-hidden bg-gradient-to-br from-purple-100 via-white to-purple-100 min-h-screen">
+<body class="overflow-x-hidden scroll-smooth  bg-gradient-to-br from-purple-100 via-white to-purple-100 min-h-screen">
 
     <!-- header -->
 
@@ -23,8 +23,8 @@
             </button>
             <div class="hidden  gap-10 lg:flex">
                <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">Home</a>
-               <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">About</a>
-               <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">Services</a>
+               <a href="#about"  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">About</a>
+               <a href="#services"  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">Services</a>
                <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">Pricing</a>
                <a href=""  class="text-gray-700 shadow-lg border-black rounded-xl px-6  py-1 hover:text-purple-700 hover:shadow-purple-300 font-medium">Contact</a>
             </div>
@@ -88,31 +88,63 @@
             </div>
 
         </div>
-
+        
         <div id="home" class="mx-5 lg:my-10 flex flex-col lg:items-center  lg:w-[850px] ">
             <h1 class="font-[inter]  text-gray-800 text-5xl font-bold lg:text-center  lg:text-6xl">Get the best possible services from our brand</h1>
             <p class="font-[inter] text-xl text-purple-700 my-4 lg:text-center lg:text-2xl ">Take your brand to next level by creating modern <span class="text-gray-950">websites and applications</span>. Here at GreatXt, that's what we do.</p>
         </div>
+        </section>
 
         <!-- About  area-->
-        <div id="about" class="mx-5 mt-15 font-[inter] lg:text-center lg:w-300 lg:text-xl">
-            <h1 class="text-4xl my-5 font-semibold text-gray-800">About</h1>
+        <div id="about" class="mx-5 lg:mx-30 mt-20 font-[inter]  lg:w-300 lg:text-xl">
+            <h1 class="text-4xl my-10 font-semibold text-gray-800">About</h1>
             <p class="text-purple-700 ">At GreatXt, we help brands grow and scale through powerful social media strategies that convert followers into loyal customers. Whether you're a startup or an established business, we create tailored campaigns to boost engagement, drive traffic, and increase sales.
             Our team blends creativity with data-driven tactics to deliver real results across platforms like Instagram, Facebook, LinkedIn, and TikTok. From content creation to paid ads, we handle everything so you can focus on running your business.
             Let’s make your brand unforgettable online.</p>
         </div>
 
         <!-- Services  -->
-
-        <div class="mx-5 lg:grid-cols-3 mt-15">
-            <h1 class="text-4xl my-5 font-semibold text-gray-800">Services</h1>
-            <div class="p-10 border border-gray-500 flex flex-col justify-center items-center  rounded-lg">
-                <span class="material-symbols-outlined" class="">fullscreen</span>
-                <p class="text-2xl">Web design and development</p>
+        <h1 id="services" class="text-4xl mt-24 my-10  mx-5 lg:mx-30  font-semibold text-gray-800 font-[inter] text-start">Services</h1>
+        <div class="mx-5 lg:mx-30 lg:grid lg:grid-cols-3 gap-5 font-[inter]">
+            
+            <div class="p-[1px] my-5 bg-gradient-to-br from-violet-400 via-purple-400 to-purple-300 rounded-lg">
+                <div class="bg-slate-50 hover:bg-gradient-to-br h-full transition from-violet-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
+                    <img src="./src/images/websitepic.svg" alt="" class="max-w-36 max-h-36">
+                    <p class="text-2xl text-center text-gray-700 font-semibold">Web design and development</p>
+                </div>
             </div>
-
+              <div class="p-[1px] my-5 bg-gradient-to-br from-violet-400 via-purple-400 to-purple-300   rounded-lg">
+                <div class="bg-slate-50 hover:bg-gradient-to-br h-full transition from-violet-100 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
+                    <img src="./src/images/mobileapp.svg" alt="" class="max-w-36 max-h-36">
+                    <p class="text-2xl text-center text-gray-700 font-semibold">Mobile apps development</p>
+                </div>
+            </div>
+            <div class="p-[1px] my-5 bg-gradient-to-br box-border  from-violet-400 via-purple-400 to-purple-300   rounded-lg">
+                <div class="transition-color duration-1000 h-full bg-slate-50 hover:bg-gradient-to-br  from-violet-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
+                    <img src="./src/images/digimark.svg" alt="" class="max-w-36 max-h-36">
+                    <p class="text-2xl text-center font-semibold text-gray-700  ">Digital marketing</p>
+                </div>
+            </div>
+            <div class="p-[1px] my-5 bg-gradient-to-br from-violet-400 via-purple-400 to-purple-300   rounded-lg">
+                <div class="transition-color duration-1000 h-full bg-slate-50 hover:bg-gradient-to-br  from-violet-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
+                    <img src="./src/images/graphicdesign.svg" alt="" class="max-w-36 max-h-36">
+                    <p class="text-2xl text-center font-semibold text-gray-700">Graphic designing</p>
+                </div>
+            </div>
+            <div class="p-[1px] my-5 bg-gradient-to-br from-violet-400 via-purple-400 to-purple-300   rounded-lg">
+                <div class="transition-color duration-1000 h-full bg-slate-50 hover:bg-gradient-to-br  from-violet-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
+                    <img src="./src/images/aiagent.svg" alt="" class="max-w-36 max-h-36">
+                    <p class="text-2xl text-center font-semibold text-gray-700">Ai Agents integration</p>
+                </div>
+            </div>
+            <div class="p-[1px] my-5 bg-gradient-to-br from-violet-400 via-purple-400 to-purple-300   rounded-lg">
+                <div class="transition-color duration-1000 h-full bg-slate-50 hover:bg-gradient-to-br  from-violet-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
+                    <img src="./src/images/videoedit.svg" alt="" class="max-w-36 max-h-36">
+                    <p class="text-2xl text-center font-semibold text-gray-700">Video editing</p>
+                </div>
+            </div>
         </div>
-    </section>
+    
     <div class="h-[1000px]"></div>
     <script src="src/script.js"></script>
 </body>
