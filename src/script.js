@@ -19,9 +19,9 @@ function startCounter(id, target, speed) {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          startCounter("section1", 120, 50);
-          startCounter("section2", 80, 60);
-          startCounter("section3", 1000, 10);
+          startCounter("section1", 30, 100);
+          startCounter("section2", 50, 50);
+          startCounter("section3", 100, 30);
           observer.disconnect(); // Run only once
         }
       });
