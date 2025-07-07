@@ -6,6 +6,9 @@
     <title>GreatXt</title>
     <link rel="stylesheet" href="./output.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 
 </head>
 <body class="overflow-x-hidden   bg-gradient-to-br from-purple-100 via-white to-purple-100 min-h-screen">
@@ -64,7 +67,9 @@
     <!-- Hero section -->
 
     <section id="hero" class="flex  flex-col lg:items-center">
-        <div id="Trending" class="group cursor-pointer flex items-center mx-5 my-10 gap-2 px-2 py-1    rounded-lg border border-purple-500 shadow-sm bg-purple-100  w-fit hover:shadow-lg hover:-translate-y-1 transition">
+        <div  data-aos="zoom-in"
+              data-aos-duration="800" 
+              data-aos-once="false" id="Trending" class="group cursor-pointer flex items-center mx-5 my-10 gap-2 px-2 py-1    rounded-lg border border-purple-500 shadow-sm bg-purple-100  w-fit hover:shadow-lg hover:-translate-y-1 transition">
             <div class="rounded-full bg-purple-500 border border-purple-950 h-2 w-2"></div>
             <p class="text-purple-600"><span class="text-purple-700 font-medium">Trending Blog:</span> Check-out</p>
             <span class="material-symbols-outlined group-hover:translate-x-1 transition text-purple-700 ">arrow_forward</span>
@@ -90,8 +95,14 @@
         </div>
         
         <div id="home" class="mx-5 lg:my-10 flex flex-col lg:items-center  lg:w-[850px] ">
-            <h1 class="font-[inter]  text-gray-800 text-5xl font-bold lg:text-center  lg:text-6xl">Get the best possible services from our brand</h1>
-            <p class="font-[inter] text-xl text-purple-700 my-4 lg:text-center lg:text-2xl ">Take your brand to next level by creating modern <span class="text-gray-950">websites and applications</span>. Here at GreatXt, that's what we do.</p>
+            <h1   data-aos="fade-right"
+                  data-aos-duration="500" 
+                  data-aos-once="false"
+                  class="font-[inter]  text-gray-800 text-5xl font-bold lg:text-center  lg:text-6xl">Get the best possible services from our brand</h1>
+            <p    data-aos="fade-left"
+                  data-aos-duration="2000" 
+                  data-aos-once="false"
+                  class="font-[inter] text-xl text-purple-700 my-4 lg:text-center lg:text-2xl ">Take your brand to next level by creating modern <span class="text-gray-950">websites and applications</span>. Here at GreatXt, that's what we do.</p>
         </div>
         </section>
 
@@ -109,37 +120,55 @@
         <h1 class="text-4xl mt-24 my-10  mx-5 lg:mx-30  font-semibold text-gray-800 font-[inter] text-start">Services</h1>
         <div class="mx-5 lg:mx-30 lg:grid lg:grid-cols-3 gap-5 font-[inter]">
             
-            <div class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300 rounded-lg">
+            <div  data-aos="fade-right"
+                  data-aos-duration="2000" 
+                  data-aos-once="false"
+                  class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300 rounded-lg">
                 <div class="bg-slate-50 hover:bg-gradient-to-br h-full transition from-purple-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
                     <img src="./src/images/websitepic.svg" alt="" class="max-w-36 max-h-36">
                     <p class="lg:my-0  text-2xl text-center text-gray-700 font-semibold">Web design and development</p>
                 </div>
             </div>
-              <div class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300   rounded-lg">
+              <div data-aos="fade-left"
+                   data-aos-duration="2000" 
+                   data-aos-once="false"
+                   class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300   rounded-lg">
                 <div class="bg-slate-50 hover:bg-gradient-to-br h-full transition from-purple-100 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
                     <img src="./src/images/mobileapp.svg" alt="" class="max-w-36 max-h-36">
                     <p class="text-2xl text-center text-gray-700 font-semibold">Mobile apps development</p>
                 </div>
             </div>
-            <div class="p-[1px] lg:my-0  my-5 bg-gradient-to-br box-border  from-purple-400 via-purple-400 to-purple-300   rounded-lg">
+            <div  data-aos="fade-right"
+                  data-aos-duration="2000" 
+                  data-aos-once="false"
+                  class="p-[1px] lg:my-0  my-5 bg-gradient-to-br box-border  from-purple-400 via-purple-400 to-purple-300   rounded-lg">
                 <div class="transition-color duration-1000 h-full bg-slate-50 hover:bg-gradient-to-br  from-purple-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
                     <img src="./src/images/digimark.svg" alt="" class="max-w-36 max-h-36">
                     <p class="text-2xl text-center font-semibold text-gray-700  ">Digital marketing</p>
                 </div>
             </div>
-            <div class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300   rounded-lg">
+            <div  data-aos="fade-left"
+                  data-aos-duration="2000" 
+                  data-aos-once="false"
+                  class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300   rounded-lg">
                 <div class="transition-color duration-1000 h-full bg-slate-50 hover:bg-gradient-to-br  from-purple-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
                     <img src="./src/images/graphicdesign.svg" alt="" class="max-w-36 max-h-36">
                     <p class="text-2xl text-center font-semibold text-gray-700">Graphic designing</p>
                 </div>
             </div>
-            <div class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300   rounded-lg">
+            <div  data-aos="fade-right"
+                  data-aos-duration="2000" 
+                  data-aos-once="false"
+                  class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300   rounded-lg">
                 <div class="transition-color duration-1000 h-full bg-slate-50 hover:bg-gradient-to-br  from-purple-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
                     <img src="./src/images/aiagent.svg" alt="" class="max-w-36 max-h-36">
                     <p class="text-2xl text-center font-semibold text-gray-700">Ai Agents integration</p>
                 </div>
             </div>
-            <div class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300   rounded-lg">
+            <div  data-aos="fade-left"
+                  data-aos-duration="2000" 
+                  data-aos-once="false"
+                  class="p-[1px] lg:my-0  my-5 bg-gradient-to-br from-purple-400 via-purple-400 to-purple-300   rounded-lg">
                 <div class="transition-color duration-1000 h-full bg-slate-50 hover:bg-gradient-to-br  from-purple-200 via-purple-50 to-purple-100  rounded-lg p-10 flex flex-col gap-10 justify-center items-center">
                     <img src="./src/images/videoedit.svg" alt="" class="max-w-36 max-h-36">
                     <p class="text-2xl text-center font-semibold text-gray-700">Video editing</p>
@@ -236,7 +265,10 @@
         <!-- Contact us -->
 
         <div id="contact"  class="my-10"></div>
-        <div  class="mx-5 lg:mx-30 font-[inter] text-lg">
+        <div   data-aos="zoom-out"
+               data-aos-duration="2000" 
+               data-aos-once="false"
+               class="mx-5 lg:mx-30 font-[inter] text-lg">
             <h1 class="text-4xl font-semibold my-5 text-gray-700 mt-25">Contact us</h1>
             <form action="" class="bg-slate-50 rounded-lg flex flex-col shadow p-5">
                 <label for="" class="text-gray-700">Name</label>
@@ -263,6 +295,12 @@
         </footer>
    
     <script src="src/script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 </html>
 
